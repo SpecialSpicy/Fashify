@@ -1,4 +1,4 @@
-## Fashify
+# Fashify
 
 ### This is a website with Sneaker Designs that links you to stylish sneakers. You name it: Anime, Streetwear and etc.
 ### It only shows you a few designs but there will be more in the future!
