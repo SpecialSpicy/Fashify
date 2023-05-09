@@ -1,10 +1,9 @@
 # Fashify
 ___________________________________________________________________________________________________________________________________________________________________
-![image](https://user-images.githubusercontent.com/120993360/233968910-57aa9aca-eed4-43c4-8d58-851a7920c3fc.png)
+![image](https://user-images.githubusercontent.com/120993360/236982188-0b4cfe52-715e-413b-9644-6c209bbf6dc0.png)
 ___________________________________________________________________________________________________________________________________________________________________
-### This is a website with Sneaker Designs that links you to stylish sneakers. You name it: Anime, Streetwear and etc.
+### Fashify is a website with very stylish sneaker designs. The website is still under construction and it's only local (not hosted)
 
-#### There will be also a jeans section and a lot more in the near future!
 
 
 
