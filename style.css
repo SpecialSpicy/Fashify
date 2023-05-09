@@ -4,68 +4,175 @@ html{
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-body{
+.scrollwheel{
   padding-bottom: 436vh;
 }
-h1{
-  position: absolute;
-  top: 1vh;
-  left: 2vw;
-  color: white;
-  font-family: helvetica;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.logo{
-position: absolute;
-top: 21px;
-left: 50px;
-height: 8%;
-width: 13%;
-}
-ul{
-  
-  top: 2.8vh;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+
+.header {
   overflow: hidden;
-  width: 100%;
-  display: flex;
-  position:absolute;
-  left: 20.8vw;
-  width: fit-content;
-}
-p{
-  font-family: helvetica;
-  text-decoration: none;
-  text-size-adjust: 1.25em;
-}
-li a{
-  margin-block: 2.09vh;
-  margin-right: 5.04vw;
-  position: relative;
-  color: white;
-  padding: 11px 17px;
-  text-align: center;
-  text-decoration: none;
-  min-width: 200px;
-  display: inline-block;
-  font-family: helvetica;
-  background-color:	#19002f;
+  background-color: #17002B;
+  padding-top: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 50px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius:20px;
   box-sizing: border-box;
-  font-weight: bold;  
 }
+
+.header a {
+  float: left;
+  margin-block: 1.09vh;
+  margin-right: 1.04vw;
+  color: black;
+  text-align: center;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+}
+.menu_bar_icon {
+display: inline-block;
+cursor: pointer;
+position: relative;
+z-index: 1;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-4px, 3px) ;
+transform: rotate(-45deg) translate(-4px, 3px) ;
+}
+
+.change .bar2 {
+opacity: 0;
+}
+
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-5px, -4px) ;
+transform: rotate(45deg) translate(-5px, -4px) ;
+}
+.sidenav {
+height: 150px;
+width: 652px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 70%;
+overflow-x: hidden;
+padding-top: 57px;
+transition: 0.6s;
+width: 60vw;
+right: -59vw;
+left: auto;
+overflow-y: hidden;
+
+font-size: 1em; 
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Candara',sans-serif;
+color:#ffffff;
+font-weight: bold;
+}
+
+.sidenav a {
+  padding: 10px 50px;
+  text-decoration: none;
+  position: relative;
+  font-size: 24px;
+  right: 0vw;
+  color: #ffffff;
+  transition: 0.3s;
+  border-radius:20px;
+  box-sizing: border-box;
+}
+
+.sidenav a:hover {
+  color: #050202;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+left: 5px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+#main {
+transition: margin-left .5s;
+padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+.logo{
+  position: absolute;
+  height: 13vh;
+  width: 22vw;
+  top: 2.5vh;
+}
+
 .ryosuke{
   position: absolute;
-  left: 87vw;
+  height: 6vh;
+  width: 4vw;
+  top: 7vh;
+  left: 25vw;
   border-radius:20px;
   box-sizing: border-box;
-  height: 6%;
-  width: 5%;
-  top: 4vh;
 }
+
+.header a:hover {
+background-color: #594a7d;
+color: #ffffff;
+}
+
+.header a.active {
+background-color: #c85000;
+color: #090011;
+}
+
+.header-right {
+  position: relative;
+  left: 90vw;
+}
+
+@media screen and (max-width: 500px) {
+.header a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+.header-right {
+  float: none;
+}
+}
+#container{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center; 
+ align-items: center; 
+}
+
+#mySidenav.open {
+right: 0;
+z-index: 0;
+left: auto;
+}
+
 li a:hover{
   background-color: #594a7d;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
@@ -79,6 +186,7 @@ li a:active {
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
+
 
 .welcome { 
   position: absolute;
@@ -225,10 +333,10 @@ font-weight: bold;
   
 }
 
-.button-5 {
+.design_button {
   align-items: center;
-  left: 600px;
-  top: 500px;
+  top: 40vh;
+  left: 32vw;
   background-clip: padding-box;
   background-color: #000000;
   border: 1px solid transparent;
@@ -250,21 +358,21 @@ font-weight: bold;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  vertical-align: baseline;
+
 
 }
 
-.button-5:hover,
-.button-5:focus {
+.design_button:hover,
+.design_button:focus {
   background-color: #7a7a7a;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.button-5:hover {
+.design_button:hover {
   transform: translateY(-1px);
 }
 
-.button-5:active {
+.design_button:active {
   background-color: #c85000;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
@@ -497,6 +605,9 @@ bottom: 4111111px;
   transition: 0.6s ease;
   opacity:1
 }
+
+
+
 
 @media (max-width:641px){
   body{

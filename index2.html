@@ -13,17 +13,41 @@
         <a href="https://initiald.fandom.com/wiki/Ryosuke_Takahashi"><img src="assets\other_images\ryosuke.gif" class="ryosuke" height= 60 width= 75 alt="rysouke"></a>
        
         <link rel="icon" type="image/x-icon" href="assets\favicons and icons\favi.ico">
-    </head>
-    <body>
-        <a href="index.html"><img class="logo" src="assets\favicons and icons\logo.png" height="70" width="210"></a>
+        <div class="scrollwheel">
+        <script>
 
-     
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index2.html">Sneakers</a></li>
-            <li><a href="index3.html">Jeans</a></li>
-            <li><a href="index4.html">Contact</a></li>
-        </ul>
+
+            /*bar animation bar to cross*/
+            function myFunction(x) {
+              x.classList.toggle("change");
+              document.getElementById("mySidenav").classList.toggle('open');
+            }
+            
+            
+            </script>
+                
+            </head>
+                
+            <body>
+            <div class="header">
+                <a href="index.html"><img class="logo" src="assets\favicons and icons\logo.png" height="202" width="702"></a>
+                <a href="index.html"><img src="assets\other_images\ryosuke.gif" class="ryosuke" height= 60 width= 75 alt="rysouke"></a>
+            
+              <div class="header-right">
+                     <div class="menu_bar_icon" onclick="myFunction(this)">
+                          <div class="bar1"></div>
+                          <div class="bar2"></div>
+                          <div class="bar3"></div>
+                    </div> 
+                      <div id="mySidenav" class="sidenav">
+                          
+                          <a href="index.html">Home</a>
+                          <a href="index2.html">Sneakers</a>
+                          <a href="index3.html">About Me</a>
+                          <a href="index4.html">Contact</a>
+                    </div>
+              </div>
+            </div>
 
         <div class="parentbox1">
         <img class="oneone" src="assets\designs\1.jpg" height="400" width="400" alt="bruh">
@@ -132,6 +156,6 @@
      
 
 
-            
+        </div>
     </body>
 </html>

@@ -11,17 +11,41 @@
         <title>Fashify: Best Fashion Choices</title>
         <a href="https://initiald.fandom.com/wiki/Ryosuke_Takahashi"><img src="assets\other_images\ryosuke.gif" class="ryosuke" height= 60 width= 75 alt="rysouke"></a>
         
-    </head>
-    <body>
-      <a href="index.html"><img class="logo" src="assets\favicons and icons\logo.png" height="70" width="210"></a>
+        <script>
 
-     
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index2.html">Sneakers</a></li>
-        <li><a href="index3.html">Jeans</a></li>
-        <li><a href="index4.html">Contact</a></li>
-    </ul>
+
+          /*bar animation bar to cross*/
+          function myFunction(x) {
+            x.classList.toggle("change");
+            document.getElementById("mySidenav").classList.toggle('open');
+          }
+          
+          
+          </script>
+              
+          </head>
+              
+          <body>
+          <div class="header">
+              <a href="index.html"><img class="logo" src="assets\favicons and icons\logo.png" height="202" width="702"></a>
+              <a href="index.html"><img src="assets\other_images\ryosuke.gif" class="ryosuke" height= 60 width= 75 alt="rysouke"></a>
+          
+            <div class="header-right">
+                   <div class="menu_bar_icon" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                  </div> 
+                    <div id="mySidenav" class="sidenav">
+                        
+                        <a href="index.html">Home</a>
+                        <a href="index2.html">Sneakers</a>
+                        <a href="index3.html">About Me</a>
+                        <a href="index4.html">Contact</a>
+                  </div>
+            </div>
+          </div>
+
         <div class="column">
             <div class="card">
               <img src="assets\favicons and icons\me.jpg" class="me" alt="bruh" height="450" width="450" alt="bruh">
@@ -29,7 +53,7 @@
                 <h2 class="name">Houman Hafez Alghoran</h2>
                 <p class="title">Creator</p>
                 <p class="fsd">I am an 18 year old Programmer </p>
-                <p class="hha">NRW, Germany</p>
+                <p class="hha">NRW, Germany </p>
                 <p><a href="mailto:Houman.HafezAlghoran@gmail.com"><button class="button">Contact</button></a></p>
               </div>
             </div>

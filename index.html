@@ -12,26 +12,53 @@
         <meta name="theme-color" content="#ffffff">
         <md-card ng-repeat="it in products.catalog" flex="22" flex-sm="46" flex-xs="80" ng-class="{shaded:$mdMedia('xs') }"></md-card>
         <title>Fashify: Best Fashion Choices</title>
-        <a href="index.html"><img src="assets\other_images\ryosuke.gif" class="ryosuke" height= 60 width= 75 alt="rysouke"></a>
         
         
-    </head>
-    <body>
-        <a href="index.html"><img class="logo" src="assets\favicons and icons\logo.png" height="202" width="702"></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index2.html">Sneakers</a></li>
-            <li><a href="index3.html">Jeans</a></li>
-            <li><a href="index4.html">Contact</a></li>
-        </ul>
-        <br><br><br><br><BR>
+        <script>
+
+
+            /*bar animation bar to cross*/
+            function myFunction(x) {
+              x.classList.toggle("change");
+              document.getElementById("mySidenav").classList.toggle('open');
+            }
+            
+            
+            </script>
+                
+            </head>
+                
+            <body>
+            <div class="header">
+                <a href="index.html"><img class="logo" src="assets\favicons and icons\logo.png" height="202" width="702"></a>
+                <a href="index.html"><img src="assets\other_images\ryosuke.gif" class="ryosuke" height= 60 width= 75 alt="rysouke"></a>
+            
+              <div class="header-right">
+                     <div class="menu_bar_icon" onclick="myFunction(this)">
+                          <div class="bar1"></div>
+                          <div class="bar2"></div>
+                          <div class="bar3"></div>
+                    </div> 
+                    
+                      <div id="mySidenav" class="sidenav">
+                          <a href="index.html">Home</a>
+                          <a href="index2.html">Sneakers</a>
+                          <a href="index3.html">About Me</a>
+                          <a href="index4.html">Contact</a>
+                    </div>
+              </div>
+            </div>
+
+
+        <br><br><br><br><br>
 
 
         &nbsp &nbsp &nbsp &nbsp<h2 class="welcome">Welcome to Fashify!<br></h2>  
-        <h2 class="to">Find Unique Sneaker Styles:<br><br>Anime, Streetwear etc.</h2>  
+        <h2 class="to">Find Unique Sneaker Styles:<br><br>&nbsp &nbsp &nbspAnime, Streetwear etc.</h2>  
+
         <br><br><br>
    
-        <a href="index2.html"><button class="button-5" role="button">Designs</button></a>
+        <a href="index2.html"><button class="design_button" role="button">Designs</button></a>
 
 
             
@@ -43,6 +70,6 @@
 
 
         
-            
+
     </body>
 </html>
