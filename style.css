@@ -496,20 +496,18 @@ font-weight: bold;
 
 .column {
   left: 600px;
-  top: 230px;
+  top: 190px;
   width: 33.3%;
   position:absolute;
   margin-bottom: 16px;
-  padding: 0 8px;
+  padding: 5px 19px;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0px 8px 0 rgba(243, 243, 243, 0.2);
   margin: 10px;
   text-align: center;
-  
-  
-
+  border-radius:20px;
 }
 
 .about-section {
@@ -521,7 +519,7 @@ font-weight: bold;
 }
 
 .container {
-  padding: 0 16px;
+  padding: 1px 16px;
   
 }
 
@@ -533,7 +531,6 @@ font-weight: bold;
 }
 
 .title {
-bottom: 4111111px;
   text-decoration:none;
   font-family:'Roboto',sans-serif;
   font-weight:bold;
@@ -551,7 +548,10 @@ bottom: 4111111px;
   color: #000000;
   background-color: #b4b4b4;
   text-align: center;
+  border: none;
   width: 50%;
+  font-size: 18px;
+  font-family: "Candara";
   border-radius:20px;
   font-weight: bold;
 }
@@ -565,13 +565,16 @@ bottom: 4111111px;
   border-radius:20px;
   box-sizing: border-box;
   background-clip: padding-box;
+  font-family: "Candara";
   position:relative;
-  top: -10px;
-  left: -10px;
+  height: 50vh;
+  width: 23vw;
+  top: 1.5vh;
 }
 .fsd, .hha {
   text-decoration:none;
   font-family:'Roboto',sans-serif;
+  font-family: "Candara";
   font-weight:bold;
   color:#ffdddd;
   font-weight: bold;
@@ -580,7 +583,7 @@ bottom: 4111111px;
 }
 .name {
   text-decoration:none;
-  font-family:'Roboto',sans-serif;
+  font-family: "Candara";
   font-weight:bold;
   color:#ffdddd;
   font-weight: bold;
