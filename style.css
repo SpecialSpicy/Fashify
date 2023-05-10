@@ -111,11 +111,6 @@ transition: margin-left .5s;
 padding: 20px;
 }
 
-@media screen and (max-width: 900px) {
-.sidenav {padding-top: 15px;}
-.sidenav a {font-size: 18px;}
-}
-
 .logo{
   position: absolute;
   height: 13vh;
@@ -611,18 +606,23 @@ font-weight: bold;
 
 
 
-@media (max-width:641px){
+@media (max-width:500px){
   body{
       font-size: 12px;
   }
 
-  .main-content h2{
+  .logo{
+    height: 6vh;
+    width: 27vw;
+    top: 2.5vh;
+  }
+  .header{
       font-size: 0.8em;
   }
 
-  .main-content h3{
-      font-size: 1.4em;
-  }
+  .sidenav {
+    height: 150px;
+    width: 652px;
 }
 
 @media (max-width:300px){
