@@ -1,23 +1,38 @@
-html{
-  background-color: 	#090011;
-  color: white;
+html {
+  --bg-color: #dde0e5;
+  --nav-color: #dbd3de;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-.scrollwheel{
-  padding-bottom: 436vh;
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --bg-color: #090011;
+    --nav-color: #17002b;
+  }
+}
+
+html, body {
+  background-color: var(--bg-color);
+}
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  background-color: var(--bg-color);
+  color: white;
 }
 
 .header {
   overflow: hidden;
-  background-color: #17002B;
-  padding-top: 50px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 50px;
+
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius:20px;
   box-sizing: border-box;
+  background-color: var(--nav-color);
+  height: auto;
 }
 
 .header a {
@@ -31,7 +46,9 @@ html{
   padding-left: 12px;
   padding-bottom: 12px;
   text-decoration: none;
+  
 }
+
 .menu_bar_icon {
 display: inline-block;
 cursor: pointer;
@@ -111,22 +128,17 @@ transition: margin-left .5s;
 padding: 20px;
 }
 
-.logo{
-  position: absolute;
-  height: 13vh;
-  width: 22vw;
-  top: 2.5vh;
+.logo {
+  height: 60%;
+  max-height: 8em;
 }
 
-.ryosuke{
-  position: absolute;
-  height: 6vh;
-  width: 4vw;
-  top: 7vh;
-  left: 25vw;
-  border-radius:20px;
-  box-sizing: border-box;
+.ryosuke {
+  height: 50%;
+  max-height: 5em;
+  border-radius: 20px;
 }
+
 
 .header a:hover {
 background-color: #594a7d;
@@ -465,28 +477,11 @@ font-weight: bold;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
-.bunny{
-  position: absolute;
-  top: 73.1vh;
-  left: 21.875vw;
-  border-radius:20px;
-  box-sizing: border-box;
-}
-.bunny1{
-  position: absolute;
-  top: 73.1vh;
-  left: 62.5vw;
-  border-radius:20px;
-  box-sizing: border-box;
-}
 .button7:hover{
   background-color: #7a51d0;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 
 .column {
   left: 600px;
@@ -531,12 +526,7 @@ font-weight: bold;
   color:#cc6918;
   font-weight: bold;
 }
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
+
 .button {
   padding: 8px;
   color: #000000;
@@ -601,33 +591,4 @@ font-weight: bold;
 .parentbox9 .ninetwo:hover, .parentbox10 .tentwo:hover, .parentbox11 .eleventwo:hover, .parentbox12 .twelvetwo:hover, .parentbox13 .thirteentwo:hover, .parentbox14 .fourteentwo:hover, .parentbox15 .fifteentwo:hover{
   transition: 0.6s ease;
   opacity:1
-}
-
-
-
-
-@media (max-width:500px){
-  body{
-      font-size: 12px;
-  }
-
-  .logo{
-    height: 6vh;
-    width: 27vw;
-    top: 2.5vh;
-  }
-  .header{
-      font-size: 0.8em;
-  }
-
-  .sidenav {
-    height: 150px;
-    width: 652px;
-}
-
-@media (max-width:300px){
-  body{
-      font-size: 10px;
-   
-  }
 }
