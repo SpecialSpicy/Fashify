@@ -1,163 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="author" content="SpecialSpicy">
-        <meta name="keywords" content="HTML, Gintama, Anime">
-        <link rel="icon" type="image/x-icon" href="assets\favicons and icons\favi.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <meta name="description" content="Gintama Ranbu Website, made by SpecialSpicy">
-        <title>Fashify: Best Fashion Choices</title>
-        
-       
-        <link rel="icon" type="image/x-icon" href="assets\favicons and icons\favi.ico">
-        <div class="scrollwheel">
-        <script>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="author" content="SpecialSpicy">
+  <link rel="icon" type="image/x-icon" href="assets\favicons and icons\favi.ico">
+  <title>Fashify: Best Fashion Choices</title>
 
 
-            /*bar animation bar to cross*/
-            function myFunction(x) {
-              x.classList.toggle("change");
-              document.getElementById("mySidenav").classList.toggle('open');
-            }
-            
-            
-            </script>
+</head>
 
-            
-                
-            </head>
-                
-            <body>
-            <div class="header">
-                <a href="index.html"><img class="logo" src="assets\favicons and icons\logo.png"></a>
-                <a href="index.html"><img src="assets\other_images\ryosuke.gif" class="ryosuke" alt="rysouke"></a>
-            
-              <div class="header-right">
-                     <div class="menu_bar_icon" onclick="myFunction(this)">
-                          <div class="bar1"></div>
-                          <div class="bar2"></div>
-                          <div class="bar3"></div>
-                    </div> 
-                      <div id="mySidenav" class="sidenav">
-                          
-                          <a href="index.html">Home</a>
-                          <a href="index2.html">Sneakers</a>
-                          <a href="index3.html">About Me</a>
-                          <a href="index4.html">Contact</a>
-                    </div>
+    <body>
+        <div class="header" id="desktop-nav">
+          <a href="index.html"><img class="logo" id="logo" src="assets\favicons and icons\logo.png"></a>
+          <a href="https://www.instagram.com/fash.ify/"><img src="assets\other_images\inst.png" id="ryo" class="ryosuke"alt="rysouke"></a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.html">Sneakers</a></li>
+            <li><a href="index3.html">About Me</a></li>
+            <li><a href="index4.html">Contact</a></li>
+          </ul>
+          <a href="index.html"><img src="assets\other_images\ryosuke.gif" id="ryo" class="ryosuke"alt="rysouke"></a>
+          </div>
+
+            <nav id="mobile-nav">
+              <div>
+                <img src="assets\icons\logo.png" alt="logo" id="logo">
               </div>
-            </div>
+              
+              <ul transition:slide>
+                <a href="index.html">Home</a>
+                <a href="index2.html">Sneakers</a>
+                <a href="index3.html">About Me</a>
+                <a href="index4.html">Contact</a>
+              </ul>
 
-        <div class="parentbox1">
-        <img class="oneone" id="sneaker" src="assets\designs\1.jpg" height="400" width="400" alt="bruh">
-        <img class="onetwo" id="sneaker" src="assets\designs\1.1.jpg" height="400" width="400" alt="bruh">
-        </div>
+            </nav>
+  
+  <div class="content">
 
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/star-sneaker-1" target=_blank class="button1">Buy</a>
+    <div id="zero">
+      <img class="main_image" id="sneaker" src="assets\designs\1.jpg" alt="bruh">
+      <a href="https://www.impex-clothing.de/collections/sneaker/products/star-sneaker-1" target=_blank
+      id="buy">Buy</a> 
 
-        <div class="parentbox2">
-        <img class="twoone" id="sneaker" src="assets\designs\2.jpg" height="400" width="400" alt="bruh">
-        <img class="twotwo" id="sneaker" src="assets\designs\2.1.jpg" height="400" width="400" alt="bruh">
-        </div>
+    </div>
+    <div id="one">
+      <img class="twoone" id="sneaker" src="assets\designs\2.jpg" alt="bruh">
+      <a href="https://www.impex-clothing.de/collections/sneaker/products/star-sneaker-3" target=_blank
+      id="buy">Buy</a>
 
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/star-sneaker-3" target=_blank class="button14">Buy</a>
+    </div>
+    <div id="two">
+      <img class="threeone" id="sneaker" src="assets\designs\3.jpg" alt="bruh">
+      <a href="https://www.impex-clothing.de/collections/sneaker/products/star-sneaker-2" target=_blank
+      id="buy">Buy</a>
 
-        <div class="parentbox3">
-        <img class="threeone" id="sneaker" src="assets\designs\3.jpg" height="400" width="400" alt="bruh">
-        <img class="threetwo" id="sneaker" src="assets\designs\3.1.jpg" height="400" width="400" alt="bruh">
-        </div>
+    </div>
+    <div id="three">
+      <img class="fourone" id="sneaker" src="assets\designs\4.jpg"  alt="bruh">
+      <a href="https://www.impex-clothing.de/collections/sneaker/products/heartflash-sneaker" target=_blank
+      id="buy">Buy</a>
 
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/star-sneaker" target=_blank class="button2">Buy</a>
+    </div>
+    <div id="four">
+      <img class="fiveone" id="sneaker" src="assets\designs\5.jpg" alt="bruh">
+      <a href="https://www.impex-clothing.de/collections/sneaker/products/hartflash-sneaker" target=_blank
+      id="buy">Buy</a>
 
-        <div class="parentbox4">
-        <img class="fourone" id="sneaker" src="assets\designs\4.jpg" height="400" width="400" alt="bruh">
-        <img class="fourtwo" id="sneaker" src="assets\designs\4.1.jpg" height="400" width="400" alt="bruh">
-        </div>
+    </div>
+    <div id="five">
+      <img class="sixone" id="sneaker" src="assets\designs\6.jpg"  alt="bruh">
+      <a href="https://www.impex-clothing.de/collections/sneaker/products/cross-patch-sneaker" target=_blank
+      id="buy">Buy</a>
 
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/star-sneaker-2" target=_blank class="button3">Buy</a>
+    </div>
+    <div id="six">
+      <img class="sevenone" id="sneaker" src="assets\designs\7.jpg" alt="bruh">
+      <a href="https://www.impex-clothing.de/collections/sneaker/products/444-sneaker" target=_blank
+      id="buy">Buy</a>
 
-        <div class="parentbox5">
-        <img class="fiveone" id="sneaker" src="assets\designs\5.jpg" height="400" width="400" alt="bruh">
-        <img class="fivetwo" id="sneaker" src="assets\designs\5.1.jpg" height="400" width="400" alt="bruh">
-        </div>
+    </div>
+    <div id="seven">
+      <img class="eightone" id="sneaker" src="assets\designs\8.jpg" alt="bruh">
+      <a href="https://www.impex-clothing.de/collections/sneaker/products/444-sneaker-2" target=_blank
+      id="buy">Buy</a>
+      
+    </div>
+    <div id="eight">
+      <img class="nineone" id="sneaker" src="assets\designs\9.jpg" alt="bruh">
+      <a href="https://www.impex-clothing.de/collections/sneaker/products/cross-patch-sneaker-1" target=_blank
+      id="buy">Buy</a>
 
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/heartflash-sneaker" target=_blank class="button4">Buy</a>
+    </div>
+    <div id="nine">
+      <img class="tenone" id="sneaker" src="assets\designs\10.jpg" alt="bruh">
+      <a href="https://www.impex-clothing.de/collections/sneaker/products/purple-flash-sneaker" target=_blank
+      id="buy">Buy</a>
 
-        <div class="parentbox6">
-        <img class="sixone" id="sneaker" src="assets\designs\6.jpg" height="400" width="400" alt="bruh">
-        <img class="sixtwo" id="sneaker"src="assets\designs\6.1.jpg" height="400" width="400" alt="bruh">
-        </div>
+    </div>
+    <div id="ten">
+      <img class="elevenone" id="sneaker" src="assets\designs\11.jpg"  alt="bruh">
+      <a href="https://www.impex-clothing.de/collections/sneaker/products/28-sneaker-1" target=_blank
+      id="buy">Buy</a>
 
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/hartflash-sneaker" target=_blank class="button5">Buy</a>
-
-        <div class="parentbox7">
-        <img class="sevenone" id="sneaker" src="assets\designs\7.jpg" height="400" width="400" alt="bruh">
-        <img class="seventwo" id="sneaker" src="assets\designs\7.1.jpg" height="400" width="400" alt="bruh">
-        </div>
-
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/444-sneaker" target=_blank class="button15">Buy</a>
-
-        <div class="parentbox8">
-        <img class="eightone" id="sneaker" src="assets\designs\8.jpg" height="400" width="400" alt="bruh">
-        <img class="eighttwo" id="sneaker" src="assets\designs\8.1.jpg" height="400" width="400" alt="bruh">
-        </div>
-
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/cross-patch-sneaker" target=_blank class="button6">Buy</a>
-
-        <div class="parentbox9">
-        <img class="nineone" id="sneaker" src="assets\designs\9.jpg" height="400" width="400" alt="bruh">  
-        <img class="ninetwo" id="sneaker" src="assets\designs\9.1.jpg" height="400" width="400" alt="bruh">
-        </div>
-
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/green-bone-sneaker" target=_blank class="button7">Buy</a>
-
-        <div class="parentbox10">
-        <img class="tenone" id="sneaker" src="assets\designs\10.jpg" height="400" width="400" alt="bruh">
-        <img class="tentwo" id="sneaker" src="assets\designs\10.1.jpg" height="400" width="400" alt="bruh">
-        </div>
-
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/444-sneaker-2" target=_blank class="button8">Buy</a>
-
-        <div class="parentbox11">
-        <img class="elevenone" src="assets\designs\11.jpg" height="400" width="400" alt="bruh">
-        <img class="eleventwo" src="assets\designs\11.1.jpg" height="400" width="400" alt="bruh">
-        </div>
-
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/cross-patch-sneaker-1" target=_blank class="button9">Buy</a>
-
-        <div class="parentbox12">
-        <img class="twelveone" id="sneaker" src="assets\designs\12.jpg" height="400" width="400" alt="bruh">
-        <img class="twelvetwo" id="sneaker" src="assets\designs\12.1.jpg" height="400" width="400" alt="bruh">
-        </div>
-
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/purple-flash-sneaker" target=_blank class="button10">Buy</a>
-
-        <div class="parentbox13">
-        <img class="thirteenone" id="sneaker" src="assets\designs\13.jpg" height="400" width="400" alt="bruh">
-        <img class="thirteentwo" id="sneaker" src="assets\designs\13.1.jpg" height="400" width="400" alt="bruh">
-        </div>
-
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/28-sneaker-1" target=_blank class="button11">Buy</a>
-
-        <div class="parentbox14">
-        <img class="fourteenone" id="sneaker" src="assets\designs\14.jpg" height="400" width="400" alt="bruh">
-        <img class="fourteentwo" id="sneaker" src="assets\designs\14.1.jpg" height="400" width="400" alt="bruh">
-        </div>
-
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/28-sneaker" target=_blank class="button12">Buy</a>
-
-        <div class="parentbox15">
-        <img class="fifteenone" id="sneaker" src="assets\designs\15.jpg" height="400" width="400" alt="bruh">
-        <img class="fifteentwo" id="sneaker" src="assets\designs\15.1.jpg" height="400" width="400" alt="bruh">
-        </div>
-
-        <a href="https://www.impex-clothing.de/collections/sneaker/products/nbk-sneaker" target=_blank class="button13">Buy</a>
-     
-
-
-        </div>
-    </body>
+    </div>
+    <div id="eleven">
+      <img class="twelveone" id="sneaker" src="assets\designs\12.jpg"  alt="bruh">
+      <a href="https://www.impex-clothing.de/collections/sneaker/products/28-sneaker" target=_blank
+      id="buy">Buy</a>
+      </div>
+    </div>
+  </body>
 </html>

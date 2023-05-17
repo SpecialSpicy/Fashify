@@ -4,51 +4,41 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="UTF-8">
         <meta name="author" content="SpecialSpicy">
-        <meta name="keywords" content="HTML, Gintama, Anime">
         <link rel="icon" type="image/x-icon" href="assets\favicons and icons\favi.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Gintama Ranbu Website, made by SpecialSpicy">
+        <meta name="description" content="Fashify, made by SpecialSpicy">
         <title>Fashify: Best Fashion Choices</title>
-        <a href="https://initiald.fandom.com/wiki/Ryosuke_Takahashi"><img src="assets\other_images\ryosuke.gif" class="ryosuke" height= 60 width= 75 alt="rysouke"></a>
-        
-        <script>
+    </head>
+    <body>
+      <div class="header" id="desktop-nav">
+        <a href="index.html"><img class="logo" id="logo" src="assets\favicons and icons\logo.png"></a>
+        <a href="https://www.instagram.com/fash.ify/"><img src="assets\other_images\inst.png" id="ryo" class="ryosuke"alt="rysouke"></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.html">Sneakers</a></li>
+          <li><a href="index3.html">About Me</a></li>
+          <li><a href="index4.html">Contact</a></li>
+        </ul>
+        <a href="index.html"><img src="assets\other_images\ryosuke.gif" id="ryo" class="ryosuke"alt="rysouke"></a>
+        </div>
 
-
-          /*bar animation bar to cross*/
-          function myFunction(x) {
-            x.classList.toggle("change");
-            document.getElementById("mySidenav").classList.toggle('open');
-          }
-          
-          
-          </script>
-              
-          </head>
-              
-          <body>
-          <div class="header">
-              <a href="index.html"><img class="logo" src="assets\favicons and icons\logo.png" height="202" width="702"></a>
-              <a href="index.html"><img src="assets\other_images\ryosuke.gif" class="ryosuke" height= 60 width= 75 alt="rysouke"></a>
-          
-            <div class="header-right">
-                   <div class="menu_bar_icon" onclick="myFunction(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                  </div> 
-                    <div id="mySidenav" class="sidenav">
-                        
-                        <a href="index.html">Home</a>
-                        <a href="index2.html">Sneakers</a>
-                        <a href="index3.html">About Me</a>
-                        <a href="index4.html">Contact</a>
-                  </div>
+          <nav id="mobile-nav">
+            <div>
+              <img src="assets\icons\logo.png" alt="logo" id="logo">
             </div>
-          </div>
+            
+            <ul transition:slide>
+              <a href="index.html">Home</a>
+              <a href="index2.html">Sneakers</a>
+              <a href="index3.html">About Me</a>
+              <a href="index4.html">Contact</a>
+            </ul>
+            
+
+          </nav>
 
         <div class="column">
             <div class="card">
-              <img src="assets\favicons and icons\me.jpg" class="me" alt="bruh" height="450" width="450" alt="bruh">
+              <img src="assets\favicons and icons\me.jpg" class="me" alt="bruh" alt="bruh">
               <div class="container">
                 <h2 class="name">Houman Hafez Alghoran</h2>
                 <p class="title">Creator</p>
@@ -61,8 +51,95 @@
 
 
             
-            
+        <style>
+
+          body{
+            overflow-x: hidden;
+          }
           
+          .column {
+            width: 100%;
+            margin-top: 6vh;
+            padding: 5px 19px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+          }
+          
+          .card {
+            box-shadow: 0 0px 8px 0 rgba(243, 243, 243, 0.2);
+            text-align: center;
+            border-radius: 10px; 
+            margin: 0 auto; 
+          }
+          
+          .me {
+            border-radius: 20px; 
+            box-sizing: border-box;
+            background-clip: padding-box;
+            font-family: "Candara";
+            max-height: 50vh; 
+            max-width: 80vw; 
+            width: 100%; 
+            height: auto; 
+          }
+          
+          
+          .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #ffffff;
+            color: rgb(241, 241, 241);
+          }
+          
+          .container {
+            padding: 1px 16px;
+          }
+          
+          .container::after,
+          .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          
+          .title {
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            color: #cc6918;
+          }
+          
+          .button {
+            padding: 8px;
+            color: #000000;
+            background-color: #b4b4b4;
+            text-align: center;
+            border: none;
+            width: 50%;
+            font-size: 18px;
+            font-family: "Candara";
+            border-radius: 20px;
+            font-weight: bold;
+          }
+          
+          .button:hover {
+            color: #000000;
+            transition: all 0.2s;
+          }
+          .fsd,
+          .hha,
+          .name {
+            text-decoration: none;
+            font-family: "Candara";
+            font-weight: bold;
+            color: #ffdddd;
+            transition: all 0.2s;
+          }
+                  
+        </style>      
+
 
 
             
