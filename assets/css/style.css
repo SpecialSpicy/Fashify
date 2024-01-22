@@ -15,6 +15,9 @@ html {
 html,
 body {
   background-color: var(--bg-color);
+  margin: 0;
+  min-height: 100vh;
+  font-family: "copperplate gothic", sans-serif;
 }
 
 a {
@@ -23,15 +26,16 @@ a {
 
 .logo {
   font-size: 3.5em;
-  font-family: "copperplate gothic";
   margin: 0.3em;
   color: #f4f5f6;
+  margin-left: 25px;
 }
 
 .ap {
-  height: 100%;
   max-height: 3em;
-  border-radius: 15px;
+  border-radius: 10px;
+  margin-right: 20px;
+  float: inline-start;
 }
 
 ul {
@@ -66,9 +70,6 @@ ul {
   .mobile-nav {
     display: flex;
   }
-  .toreno {
-    display: none;
-  }
 }
 
 @media (min-width: 850px) {
@@ -89,7 +90,6 @@ li a {
   margin-right: 2em;
   padding: 10px;
   border-radius: 15px;
-  font-family: "copperplate gothic";
   color: white;
   transition: ease-in-out 150ms;
   font-size: 0.7em;
@@ -111,7 +111,6 @@ li a:active {
 }
 .hero_text {
   font-size: 2em;
-  font-family: "copperplate gothic";
   color: #000000;
   text-align: center;
   margin-top: 5em;
@@ -122,11 +121,10 @@ li a:active {
   transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
 
 }
-
 .hero_bg {
   margin-top: 30px;
   height: 60vh;
-  width: 95vw;
+  width: 98vw;
   border-radius: 15px;
 }
 
@@ -134,7 +132,6 @@ li a:active {
   background-color: #03000F;
   border-radius: 20px;
   color: #F4F5F6;
-  font-family: "copperplate gothic", sans-serif;
   font-size: 40px;
   padding: 20px 50px;
   transition: ease-in-out 300ms;
@@ -152,6 +149,27 @@ li a:active {
   background-color: #c85000;
 }
 
+footer{
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-decoration: none;
+}
+footer h6{
+  float: inline-start;
+  margin-left: 2vw;
+}
+footer i{
+  margin: 0.1em;
+}
+footer a{
+  color: inherit;
+}
+.fa_icons{
+  padding: 15px;
+}
 .content {
   display: flex;
   justify-content: center;
@@ -179,7 +197,6 @@ li a:active {
   width: 1vw;
   margin: 0.3em;
   border-radius: 20px;
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #000000;
   background-color: #b4b4b4;
