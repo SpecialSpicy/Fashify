@@ -10,7 +10,7 @@ html {
     --bg-color: #03000f;
     --nav-color: #0b0033;
     --footer-color: #03000f;
-    --text-color: #F4F5F6;
+    --text-color: #f4f5f6;
   }
 }
 
@@ -106,7 +106,7 @@ li a:active {
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
 }
 
-.hero_box{
+.hero_box {
   position: relative;
   text-align: center;
 }
@@ -120,7 +120,6 @@ li a:active {
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 .hero_bg {
   margin-top: 30px;
@@ -149,27 +148,27 @@ li a:active {
   background-color: #c85000;
 }
 
-footer{
+footer {
   margin-top: 10vh;
   background-color: var(--footer-color);
   color: var(--text-color);
   text-align: center;
-  position:absolute;
+  position: absolute;
   width: 100%;
 
   text-decoration: none;
 }
-footer h6{
+footer h6 {
   float: inline-start;
   margin-left: 2vw;
 }
-footer i{
+footer i {
   margin: 0.1em;
 }
-footer a{
+footer a {
   color: inherit;
 }
-.fa_icons{
+.fa_icons {
   padding: 15px;
 }
 .keyboards {
@@ -206,8 +205,6 @@ footer a{
   }
 }
 
-
-
 .card {
   max-width: 400px;
   margin: 20px auto;
@@ -225,7 +222,6 @@ footer a{
 
 .card-content {
   padding: 20px;
-  
 }
 
 .card-content h2 {
@@ -233,7 +229,6 @@ footer a{
   font-size: 2em;
   color: var(--text-color);
   text-align: center;
-
 }
 
 .card-content p {
@@ -243,10 +238,10 @@ footer a{
   color: var(--text-color);
   text-align: center;
 }
-.card-content .card-info{
+.card-content .card-info {
   color: #4613be;
 }
-.card-button{
+.card-button {
   border-radius: 15px;
   background-color: var(--text-color);
   color: #000000;
@@ -258,7 +253,7 @@ footer a{
   left: 30%;
   transform: translate(-50%, -50%);
 }
-.card-button:hover{
+.card-button:hover {
   background-color: #594a7d;
   transition: ease-in-out 200ms;
 }
