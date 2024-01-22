@@ -9,6 +9,8 @@ html {
   html {
     --bg-color: #03000f;
     --nav-color: #0b0033;
+    --footer-color: #03000f;
+    --text-color: #F4F5F6;
   }
 }
 
@@ -27,7 +29,7 @@ a {
 .logo {
   font-size: 3.5em;
   margin: 0.3em;
-  color: #f4f5f6;
+  color: var(--text-color);
   margin-left: 25px;
 }
 
@@ -90,7 +92,7 @@ li a {
   margin-right: 2em;
   padding: 10px;
   border-radius: 15px;
-  color: white;
+  color: var(--text-color);
   transition: ease-in-out 150ms;
   font-size: 0.7em;
 }
@@ -102,7 +104,6 @@ li a:hover {
 li a:active {
   background-color: #c85000;
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  transform: translateY(0);
 }
 
 .hero_box{
@@ -111,35 +112,34 @@ li a:active {
 }
 .hero_text {
   font-size: 2em;
-  color: #000000;
+  color: #000000; /*text color doesn't fit here so I went with black*/
   text-align: center;
   margin-top: 5em;
-  line-height: 1.6em;
+  line-height: 1.9em;
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+  transform: translate(-50%, -50%);
 
 }
 .hero_bg {
   margin-top: 30px;
   height: 60vh;
-  width: 98vw;
+  width: 99vw;
   border-radius: 15px;
 }
 
 .hero_button {
-  background-color: #03000F;
-  border-radius: 20px;
-  color: #F4F5F6;
-  font-size: 40px;
+  border-radius: 15px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 2.5em;
   padding: 20px 50px;
   transition: ease-in-out 300ms;
   position: absolute;
   top: 80%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
-  color: white; /* Adjust text color for better visibility */
+  transform: translate(-50%, -50%);
 }
 
 .hero_button:hover {
@@ -150,11 +150,13 @@ li a:active {
 }
 
 footer{
-  color: white;
+  margin-top: 10vh;
+  background-color: var(--footer-color);
+  color: var(--text-color);
   text-align: center;
-  position: fixed;
+  position:absolute;
   width: 100%;
-  bottom: 0;
+
   text-decoration: none;
 }
 footer h6{
@@ -170,7 +172,7 @@ footer a{
 .fa_icons{
   padding: 15px;
 }
-.content {
+.keyboards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -180,52 +182,83 @@ footer a{
   margin-top: 10vh;
 }
 
-#sneaker {
-  border-radius: 30px;
+.keyboards img {
+  border-radius: 15px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 350px;
-  width: 400px;
+  height: 450px;
+  width: 600px;
   transition: ease-in-out 450ms;
 }
 
-#buy {
-  display: flex;
-  justify-content: center;
-  padding: 18px 50px;
-  width: 1vw;
-  margin: 0.3em;
-  border-radius: 20px;
-  font-weight: bold;
-  color: #000000;
-  background-color: #b4b4b4;
-  transition: all 0.2s;
-  margin: 6px auto;
-}
-
 @media (max-width: 1000px) {
-  #sneaker {
+  .keyboards img {
     width: 500%;
     height: 90%;
     max-width: 600px;
   }
-}
-
-@media (max-width: 1000px) {
-  #buy {
-    margin: 8px 42%;
-    padding: 18px 70px;
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .welcome {
+  .hero_text {
     font-size: 2.3em;
   }
-
   .header a {
     padding: 5px 30px 5px 30px;
   }
+}
+
+
+
+.card {
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.card-content {
+  padding: 20px;
+  
+}
+
+.card-content h2 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: var(--text-color);
+  text-align: center;
+
+}
+
+.card-content p {
+  line-height: 2em;
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: var(--text-color);
+  text-align: center;
+}
+.card-content .card-info{
+  color: #4613be;
+}
+.card-button{
+  border-radius: 15px;
+  background-color: var(--text-color);
+  color: #000000;
+  font-size: 1.5em;
+  padding: 10px 15px;
+  transition: ease-in-out 300ms;
+  position: relative;
+  margin-top: 50px;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.card-button:hover{
+  background-color: #594a7d;
+  transition: ease-in-out 200ms;
 }
